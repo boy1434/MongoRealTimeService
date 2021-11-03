@@ -12,11 +12,11 @@ import org.springframework.web.client.RestTemplate;
 import com.ex.realtime.domain.NaverNews;
 
 @Component // 메모리에 띄우기
-public class NaverNewsBatchUtil {
+public class NaverNewsCraw {
 
 	int aidNum = 279800;
 	
-	public List<NaverNews> collect2(){
+	public List<NaverNews> newsCraw(){
 		RestTemplate rt = new RestTemplate();	
 		List<NaverNews> naverNewsList = new ArrayList<>();
 		

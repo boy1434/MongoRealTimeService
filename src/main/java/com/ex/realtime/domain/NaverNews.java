@@ -1,6 +1,9 @@
 package com.ex.realtime.domain;
 
-import java.util.List;
+
+
+import java.sql.Timestamp;
+import java.util.Date;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -20,7 +23,7 @@ public class NaverNews {
 	
 	private String company;
 	private String title;
-	private String createdAt;
+	private Date createdAt;
 	
 	
 }
